@@ -1,21 +1,22 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<!-- Load plotly.js into the DOM -->
-	<script src='https://cdn.plot.ly/plotly-2.31.1.min.js'></script>
+	<head>
+		<!-- Load plotly.js into the DOM -->
+		<script src='https://cdn.plot.ly/plotly-2.31.1.min.js'></script>
+		
+	</head>
 	
-</head>
-
-<body>
-	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
-	<script>
-		var data = [
-		  {
-		    z: [[1, 20, 30], [20, 1, 60], [30, 60, 1]],
-		    type: 'heatmap'
-		  }
-		];
-
-		Plotly.newPlot('myDiv', data);
-	</script>
-</body>
+	<body>
+		<div id='myDiv'></div>
+		<script>
+			var data = [
+			  {
+			    z: [[1, 20, 30], [20, 1, 60], [30, 60, 1]],
+			    type: 'heatmap'
+			  }
+			];
+	
+			Plotly.newPlot('myDiv', data);
+		</script>
+	</body>
 </html>
