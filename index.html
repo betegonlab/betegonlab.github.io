@@ -2,6 +2,11 @@
 <head>
 	<!-- Load plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-2.31.1.min.js'></script>
+	
+</head>
+
+<body>
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
 	<script>
 		var data = [
 		  {
@@ -12,9 +17,5 @@
 
 		Plotly.newPlot('myDiv', data);
 	</script>
-</head>
-
-<body>
-	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
 </body>
 </html>
