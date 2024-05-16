@@ -11,49 +11,35 @@
 		<div id='myDiv' class="mbplot"></div>
 		<div id='myDiv2' class="mbplot"></div>
 		<script>
-			var data = [
-			  {
-			    z: [[1, 20, 30], [20, 1, 60], [30, 60, 1]],
-			    type: 'heatmap'
+			function makeplot() {
+				d3.csv("https://betegonlab.github.io/K912_dilution_curve_umap_cell_type_aav_binary.csv", function(umapData){ processData(umapData) } );
+			};
+			function processUmap(umapData) {
+
+			  console.log(allRows);
+			  var x = [], y = [], cell_type = []
+			
+			  for (var i=0; i<umapData.length; i++) {
+			    row = allRows[i];
+			    x.push( row['umap1'] );
+			    y.push( row['umap2'] );
+				cell_type.push( row['cell_type'] );
 			  }
-			];
-	
-			Plotly.newPlot('myDiv', data);
-			var trace1 = {
-  x: ['South Korea', 'China', 'Canada'],
-  y: [24, 10, 9],
-  name: 'Gold',
-  type: 'scatter',
-  mode: 'markers'
-};
-
-var trace2 = {
-  x: ['South Korea', 'China', 'Canada'],
-  y: [13, 15, 12],
-  name: 'Silver',
-  type: 'scatter',
-  mode: 'markers'
-};
-
-var trace3 = {
-  x: ['South Korea', 'China', 'Canada'],
-  y: [11, 8, 12],
-  name: 'Bronze',
-  type: 'scatter',
-  mode: 'markers'
-};
-
-var data = [trace1, trace2, trace3];
-
-var layout = {
-  scattermode: 'group',
-  title: 'Grouped by Country',
-  xaxis: {title: 'Country'},
-  yaxis: {title: 'Medals'},
-  scattergap: 0.7
-};
-
-Plotly.newPlot('myDiv2', data, layout);
+			  console.log( 'X',x, 'Y',y, 'SD',standard_deviation );
+			  makePlotly( x, y, cell_type );
+			}
+			
+			function makePlotly( x, y, cell_type ){
+			  var plotDiv = document.getElementById("plot");
+			  var traces = [{
+			    x: x,
+			    y: y
+			  }];
+			
+			  Plotly.newPlot('myDiv', traces,
+			    {title: 'Plotting CSV data from AJAX call'});
+			};
+			  makeplot();
 		</script>
 	</body>
 </html>
