@@ -56,8 +56,8 @@ img { max-width: 100%; height: auto; }
   backdrop-filter: saturate(180%) blur(8px);
   position: sticky; top: 0; z-index: 50;
 }
-.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 74px; gap: 16px; }
-.brand img { height: 38px; width: auto; display: block; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 96px; gap: 16px; }
+.brand img { height: 62px; width: auto; display: block; }
 .site-nav { display: flex; gap: 26px; flex-wrap: wrap; }
 .site-nav a {
   text-decoration: none; color: var(--ink); font-weight: 500; font-size: 0.98rem;
@@ -157,7 +157,7 @@ figcaption { color: var(--muted); font-size: .9rem; margin-top: .8em; font-style
   h1 { font-size: 1.9rem; }
   .nav-toggle { display: block; }
   .site-nav {
-    display: none; position: absolute; top: 74px; left: 0; right: 0;
+    display: none; position: absolute; top: 96px; left: 0; right: 0;
     flex-direction: column; gap: 0; background: #fff; border-bottom: 1px solid var(--line);
     padding: 8px 24px 16px;
   }
