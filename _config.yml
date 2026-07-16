@@ -1,0 +1,32 @@
+title: Betegon Lab @ Pitt
+description: The Betegon Lab at the University of Pittsburgh studies protein homeostasis in photoreceptor disease and engineers novel AAV-vector systems.
+url: "https://betegonlab.science"
+baseurl: ""
+lang: en
+
+# Navigation order
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: People
+    url: /people/
+  - title: Publications
+    url: /publications/
+  - title: Contact
+    url: /contact/
+  - title: 3D printing
+    url: /3d-printing/
+
+social:
+  mastodon: https://sciencemastodon.com/@miguelb
+
+# Build settings
+markdown: kramdown
+exclude:
+  - README.md
+  - fetch_assets.sh
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,84 @@
+# Publications, newest first. Add new entries at the top and bump "num".
+# Author names matching "Betegon M" are automatically bolded.
+# links: give a doi and/or a pdf (pdf path is relative to the site root).
+
+- num: 10
+  authors: "Sedorovitz M, Byrne L, Betegon M."
+  title: "Chromatographic purification and polishing of AAV particles."
+  venue: "Methods in Molecular Biology: Ocular Regeneration"
+  year: 2024
+  doi: "https://doi.org/10.1007/978-1-0716-4087-6"
+
+- num: 9
+  authors: "Betegon M, Brodsky JL."
+  title: "Unlocking the door for ERAD."
+  venue: "Nature Cell Biology"
+  year: 2020
+  pdf: "/assets/files/s41556-020-0476-1.pdf"
+  doi: "https://doi.org/10.1038/s41556-020-0476-1"
+
+- num: 8
+  authors: "Wang F, Yu Z, Betegon M, Campbell MG, Aksel T, Zhao J, Li S, Douglas SM, Cheng Y, Agard DA."
+  title: "Amino and PEG-amino graphene oxide grids enrich and protect samples for high-resolution single particle cryo-electron microscopy."
+  venue: "Journal of Structural Biology"
+  year: 2020
+  pdf: "/assets/files/1-s20-S1047847719302667-main.pdf"
+  doi: "https://doi.org/10.1016/j.jsb.2019.107437"
+
+- num: 7
+  authors: "Freilich R, Betegon M, Tse E, Mok S-A, Julien O, Agard DA, Southworth DR, Takeuchi K, Gestwicki JE."
+  title: "Competing protein-protein interactions regulate binding of Hsp27 to its client protein tau."
+  venue: "Nature Communications"
+  year: 2018
+  pdf: "/assets/files/s41467-018-07012-4.pdf"
+  doi: "https://doi.org/10.1038/s41467-018-07012-4"
+
+- num: 6
+  authors: "Palovcak E, Wang F, Zheng SQ, Yu Z, Li S, Betegon M, Bulkley D, Agard DA, Cheng Y."
+  title: "A simple and robust procedure for preparing graphene-oxide cryo-EM grids."
+  venue: "Journal of Structural Biology"
+  year: 2018
+  pdf: "/assets/files/1-s20-S1047847718301655-main.pdf"
+  doi: "https://doi.org/10.1016/j.jsb.2018.07.007"
+
+- num: 5
+  authors: "Elnatan D*, Betegon M*, Liu Y, Ramelot T, Kennedy MA, Agard DA."
+  title: "Symmetry broken and rebroken during the ATP hydrolysis cycle of the mitochondrial Hsp90 TRAP1."
+  venue: "eLife"
+  year: 2017
+  note: "*equally contributing authors"
+  pdf: "/assets/files/elife-25235-v2.pdf"
+  doi: "https://doi.org/10.7554/eLife.25235"
+
+- num: 4
+  authors: "Caro F*, Ahyong V*, Betegon M, DeRisi JL."
+  title: "Genome-wide regulatory dynamics of translation in the Plasmodium falciparum asexual blood stages."
+  venue: "eLife"
+  year: 2014
+  note: "*equally contributing authors"
+  pdf: "/assets/files/elife-04106-v1.pdf"
+  doi: "https://doi.org/10.7554/eLife.04106"
+
+- num: 3
+  authors: "Greninger AL, Knudsen GM, Betegon M, Burlingame AL, DeRisi JL."
+  title: "ACBD3 interaction with TBC1 domain 22 protein is differentially affected by enteroviral and kobuviral 3A protein binding."
+  venue: "mBio"
+  year: 2013
+  pdf: "/assets/files/mBio00098-13.pdf"
+  doi: "https://doi.org/10.1128/mBio.00098-13"
+
+- num: 2
+  authors: "Greninger AL, Knudsen GM, Betegon M, Burlingame AL, DeRisi JL."
+  title: "The 3A protein from multiple picornaviruses utilizes the golgi adaptor protein ACBD3 to recruit PI4KIIIβ."
+  venue: "Journal of Virology"
+  year: 2012
+  pdf: "/assets/files/JVI06778-11.pdf"
+  doi: "https://doi.org/10.1128/JVI.06778-11"
+
+- num: 1
+  authors: "Earl D, Bradnam K, St John J, Darling A, Lin D, Fass J, Yu HOK, Buffalo V, Zerbino DR, Diekhans M, Nguyen N, Ariyaratne PN, Sung W-K, Ning Z, Haimel M, Simpson JT, Fonseca NA, Birol İ, Docking TR, Ho IY, Rokhsar DS, Chikhi R, Lavenier D, Chapuis G, Naquin D, Maillet N, Schatz MC, Kelley DR, Phillippy AM, Koren S, Yang S-P, Wu W, Chou W-C, Srivastava A, Shaw TI, Ruby JG, Skewes-Cox P, Betegon M, Dimon MT, et al."
+  title: "Assemblathon 1: a competitive assessment of de novo short read assembly methods."
+  venue: "Genome Research"
+  year: 2011
+  pdf: "/assets/files/Genome-Res-2011-Earl-2224-41.pdf"
+  doi: "https://doi.org/10.1101/gr.126599.111"

@@ -1,0 +1,62 @@
+---
+layout: default
+title: People
+permalink: /people/
+---
+
+{% capture initials %}{% endcapture %}
+
+<h1>People</h1>
+
+<!-- PI -->
+{% assign p = site.data.people.pi %}
+<div class="people-grid" style="margin-bottom: 8px;">
+  <div class="person">
+    {% if p.photo %}
+      <img class="avatar" src="{{ '/assets/people/' | append: p.photo | relative_url }}" alt="{{ p.name }}">
+    {% else %}
+      <div class="avatar placeholder">{{ p.name | slice: 0, 1 }}</div>
+    {% endif %}
+    <h3>{{ p.name }}</h3>
+    <p class="role">{{ p.role }}</p>
+    {% for line in p.meta %}<p class="meta">{{ line }}</p>{% endfor %}
+  </div>
+</div>
+
+<!-- Members -->
+{% if site.data.people.members and site.data.people.members.size > 0 %}
+  <h2 class="section-label">Lab members</h2>
+  <div class="people-grid">
+    {% for m in site.data.people.members %}
+      <div class="person">
+        {% if m.photo %}
+          <img class="avatar" src="{{ '/assets/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}">
+        {% else %}
+          <div class="avatar placeholder">{{ m.name | slice: 0, 1 }}</div>
+        {% endif %}
+        <h3>{{ m.name }}</h3>
+        <p class="role">{{ m.role }}</p>
+        {% for line in m.meta %}<p class="meta">{{ line }}</p>{% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<!-- Alumni -->
+{% if site.data.people.alumni and site.data.people.alumni.size > 0 %}
+  <h2 class="section-label">Former members</h2>
+  <div class="people-grid">
+    {% for a in site.data.people.alumni %}
+      <div class="person">
+        {% if a.photo %}
+          <img class="avatar" src="{{ '/assets/people/' | append: a.photo | relative_url }}" alt="{{ a.name }}">
+        {% else %}
+          <div class="avatar placeholder">{{ a.name | slice: 0, 1 }}</div>
+        {% endif %}
+        <h3>{{ a.name }}</h3>
+        <p class="role">{{ a.role }}</p>
+        {% for line in a.meta %}<p class="meta">{{ line }}</p>{% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

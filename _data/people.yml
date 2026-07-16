@@ -1,0 +1,37 @@
+# Edit this file to add / remove / reorder lab members.
+# photo: filename inside assets/people/  (leave blank for an initials placeholder)
+
+pi:
+  name: Miguel Betegon, PhD
+  role: Assistant Professor
+  photo: miguel.jpeg
+  meta:
+    - "mib145@pitt.edu"
+    - "PhD in Biophysics, UCSF"
+    - "BSc Artificial Intelligence & Computer Science, University of Edinburgh"
+
+members:
+  - name: Tommy Tillman, PhD
+    role: Senior Research Scientist
+    photo: tommy.jpeg
+  - name: Thomas Tugwell, PhD
+    role: Postdoctoral Fellow
+    photo: thomas.jpg
+  - name: Heather Folkwein, PhD
+    role: Senior Research Scientist
+    photo: heather.jpg
+
+alumni:
+  - name: Rhea Premanand
+    role: Undergraduate Researcher, 2022–2025
+    photo: rhea.jpg
+    meta:
+      - "Now: Graduate Student at UNC Chapel Hill"
+  - name: Samantha Epstein
+    role: Undergraduate Researcher, 2023–2025
+    photo: samantha.jpeg
+    meta:
+      - "Now: Associate Scientist at Thermo Fisher"
+  - name: Ismael Ali
+    role: Hillman Academy Student, 2023 & 2024
+    photo:

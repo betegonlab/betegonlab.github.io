@@ -1,0 +1,26 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<h1>Publications</h1>
+
+<ol class="pub-list">
+  {% for pub in site.data.publications %}
+    <li class="pub">
+      <span class="num">{{ pub.num }}.</span>
+      <div>
+        <p class="cite">
+          <span class="authors">{{ pub.authors | replace: 'Betegon M', '<span class="me">Betegon M</span>' }}</span>
+          {% if pub.title and pub.title != '' %} {{ pub.title }}{% endif %}
+          <em>{{ pub.venue }}</em>, {{ pub.year }}.{% if pub.note %} <span class="meta">({{ pub.note }})</span>{% endif %}
+        </p>
+        <div class="links">
+          {% if pub.pdf %}<a href="{{ pub.pdf | relative_url }}">PDF</a>{% endif %}
+          {% if pub.doi %}<a href="{{ pub.doi }}">DOI</a>{% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ol>
