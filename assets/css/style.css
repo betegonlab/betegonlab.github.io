@@ -57,7 +57,14 @@ img { max-width: 100%; height: auto; }
   position: sticky; top: 0; z-index: 50;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 96px; gap: 16px; }
-.brand img { height: 62px; width: auto; display: block; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.brand-icon { height: 58px; width: auto; display: block; }
+.brand-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.75rem; font-weight: 600; color: var(--navy);
+  letter-spacing: -0.01em; white-space: nowrap; line-height: 1;
+}
+.brand-name .at { color: var(--gold); }
 .site-nav { display: flex; gap: 26px; flex-wrap: wrap; }
 .site-nav a {
   text-decoration: none; color: var(--ink); font-weight: 500; font-size: 0.98rem;
@@ -163,6 +170,8 @@ figcaption { color: var(--muted); font-size: .9rem; margin-top: .8em; font-style
   }
   body.nav-open .site-nav { display: flex; }
   .site-nav a { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .brand-icon { height: 46px; }
+  .brand-name { font-size: 1.3rem; }
   .research-block, .contact-grid { grid-template-columns: 1fr; gap: 20px; }
   .research-block.reverse .research-figure { order: 0; }
   .hero .lede { font-size: 1.35rem; }
