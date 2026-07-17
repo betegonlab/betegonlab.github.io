@@ -19,9 +19,6 @@ nav:
   - title: 3D printing
     url: /3d-printing/
 
-social:
-  mastodon: https://sciencemastodon.com/@miguelb
-
 # Build settings
 markdown: kramdown
 exclude:

@@ -4,13 +4,23 @@ title: Home
 ---
 
 <section class="hero">
+  <p class="eyebrow">// Betegon Lab @ Pitt</p>
   <p class="lede">We study protein homeostasis in photoreceptor disease and engineer novel AAV-vector systems.</p>
 
+  <div class="hero-sprites" aria-hidden="true">
+    <img class="eye px" src="{{ '/assets/img/pixel/eye.png' | relative_url }}" alt="">
+    <img class="dna px" src="{{ '/assets/img/pixel/dna.png' | relative_url }}" alt="">
+    <img class="capsid px" src="{{ '/assets/img/pixel/capsid.png' | relative_url }}" alt="">
+  </div>
+
   <figure class="hero-figure">
-    <a href="{{ '/research/' | relative_url }}">
-      <img src="{{ '/assets/img/landing.jpg' | relative_url }}"
-           alt="Anatomy of retinal layers as described by Santiago Ramón y Cajal.">
-    </a>
+    <div class="window">
+      <div class="window-title">retina.bmp <span class="dots"><i></i><i></i><i></i></span></div>
+      <a href="{{ '/research/' | relative_url }}">
+        <img src="{{ '/assets/img/landing.jpg' | relative_url }}"
+             alt="Anatomy of retinal layers as described by Santiago Ramón y Cajal.">
+      </a>
+    </div>
     <figcaption>Anatomy of retinal layers as described by Santiago Ramón y Cajal.</figcaption>
   </figure>
 </section>
