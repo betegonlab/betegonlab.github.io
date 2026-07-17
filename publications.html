@@ -17,7 +17,7 @@ permalink: /publications/
           <em>{{ pub.venue }}</em>, {{ pub.year }}.{% if pub.note %} <span class="meta">({{ pub.note }})</span>{% endif %}
         </p>
         <div class="links">
-          {% if pub.pdf %}<a href="{{ pub.pdf | relative_url }}">PDF</a>{% endif %}
+          {% if pub.pdf %}<a href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ pub.pdf | relative_url }}{% endif %}"{% if pub.pdf contains '://' %} target="_blank" rel="noopener"{% endif %}>PDF</a>{% endif %}
           {% if pub.doi %}<a href="{{ pub.doi }}">DOI</a>{% endif %}
         </div>
       </div>
