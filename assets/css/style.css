@@ -66,6 +66,8 @@ img.px, .px img { image-rendering: pixelated; image-rendering: crisp-edges; }
 }
 .window-title .dots { margin-left: auto; display: flex; gap: 5px; }
 .window-title .dots i { width: 10px; height: 10px; background: var(--gold); border: 2px solid var(--ink); display: block; border-radius: 50%; }
+/* landing-page window: palm green */
+.hero .window-title { background: linear-gradient(180deg, #4faf63 0%, #37904f 50%, #2c7a43 100%); }
 
 /* ---- typography ---- */
 h1, h2, h3, h4 {
@@ -97,7 +99,7 @@ img { max-width: 100%; height: auto; }
    ========================================================================== */
 .site-header { background: transparent; }
 .header-inner {
-  margin-top: 18px;
+  margin-top: 24px;
   background: var(--paper);
   border: 3px solid var(--ink);
   box-shadow: 6px 6px 0 rgba(0,0,0,.45);
@@ -149,7 +151,7 @@ img { max-width: 100%; height: auto; }
    Main content — wrapped in a pixel "window"
    ========================================================================== */
 main {
-  margin: 22px auto 30px;
+  margin: 34px auto 34px;
   background: var(--paper);
   border: 3px solid var(--ink);
   box-shadow: 6px 6px 0 rgba(0,0,0,.45);
