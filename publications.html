@@ -13,7 +13,7 @@ permalink: /publications/
       <div>
         <p class="cite">
           <span class="authors">{{ pub.authors | replace: 'Betegon M', '<span class="me">Betegon M</span>' }}</span>
-          {% if pub.title and pub.title != '' %} {{ pub.title }}{% endif %}
+          {% if pub.title and pub.title != '' %} <span class="title">{{ pub.title }}</span>{% endif %}
           <em>{{ pub.venue }}</em>, {{ pub.year }}.{% if pub.note %} <span class="meta">({{ pub.note }})</span>{% endif %}
         </p>
         <div class="links">

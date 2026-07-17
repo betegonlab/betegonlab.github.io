@@ -229,7 +229,7 @@ figcaption { color: var(--muted); font-size: .82rem; margin-top: .8em; font-styl
   font-family: "VT323", monospace; font-size: 3.4rem; color: var(--purple);
 }
 .person h3 { margin: 0 0 2px; font-size: 1.35rem; color: var(--ink); }
-.person .role { font-family: "Press Start 2P", monospace; color: var(--pink-d); font-size: .5rem; line-height: 1.5; margin: 4px 0 6px; }
+.person .role { font-family: "Press Start 2P", monospace; color: var(--pink-d); font-size: .62rem; line-height: 1.6; margin: 6px 0 8px; }
 .person .meta { color: var(--muted); font-size: .82rem; margin: 0; }
 .person .meta a { color: var(--muted); }
 .section-label { text-align: center; margin-top: 1.8em; }
@@ -243,6 +243,7 @@ figcaption { color: var(--muted); font-size: .82rem; margin-top: .8em; font-styl
 .pub .num { font-family: "VT323", monospace; font-size: 1.7rem; color: var(--gold); line-height: 1; }
 .pub .cite { margin: 0; font-size: .92rem; }
 .pub .cite em { color: var(--purple); font-style: italic; }
+.pub .cite .title { text-decoration: underline; text-underline-offset: 2px; }
 .pub .cite .authors .me { font-weight: bold; color: var(--pink-d); }
 .pub .links a {
   font-family: "Press Start 2P", monospace; font-size: .5rem;
