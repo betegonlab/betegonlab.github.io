@@ -149,7 +149,7 @@ img { max-width: 100%; height: auto; }
    Main content — wrapped in a pixel "window"
    ========================================================================== */
 main {
-  margin: 22px 0 30px;
+  margin: 22px auto 30px;
   background: var(--paper);
   border: 3px solid var(--ink);
   box-shadow: 6px 6px 0 rgba(0,0,0,.45);
@@ -269,7 +269,7 @@ figcaption { color: var(--muted); font-size: .82rem; margin-top: .8em; font-styl
 /* ==========================================================================
    Footer
    ========================================================================== */
-.site-footer { margin: 0 0 26px; }
+.site-footer { margin: 0 auto 26px; }
 .footer-inner {
   background: var(--paper); border: 3px solid var(--ink); box-shadow: 6px 6px 0 rgba(0,0,0,.45);
   padding: 14px 18px; display: flex; justify-content: center; align-items: center;
